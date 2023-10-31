@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2; 
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* загальний контейнер */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(92, 92, 92, 0.1);
+}
+
+/* контейнер з гравцями */
+.players {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* гравець */
+.player {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 45%; 
+  background: #eaf2f6;
+  box-sizing: border-box;
+}
+
+/* стилі для рандомних чисел */
+#userNumber, #computerNumber {
+  font-size: 36px;
+  color: #075480;
+}
+
+/* кнопка */
+#generateButton {
+  padding: 15px 50px;
+  background: #013756;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* адаптивність */
+@media (max-width: 576px) {
+
+  .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .players {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .player {
+    padding: 0; 
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+
+  #user, #computer, #userScore, #computerScore {
+    font-size: 24px;
+  }
+
+  #userNumber, #computerNumber {
+    font-size: 32px;
+  }
+
+  #generateButton {
+    padding: 15px auto;
+    font-size: 20px;
+  }
+
+}
